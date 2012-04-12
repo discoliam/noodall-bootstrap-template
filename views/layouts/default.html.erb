@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Noodall CMS</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-wysihtml5-0.0.2.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="pull-left"><span>Site Title</span> Content Management System</h1>
+    <nav id="status" class="pull-right">
+      <ul>
+        <li>Mr Admin is logged in</li>
+        <li><a href="#" title="#">Sign Out</a></li>
+        <li><a href="#" title="#">Live Site</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav id="main-nav">
+    <ul class="nav nav-pills">
+      <li><a href="/" title="#">Contents</a></li>
+      <li><a href="/assets" title="#">Assets</a></li>
+      <li><a href="/users" title="#">Users</a></li>
+      <li><a href="#" title="#">Forms</a></li>
+      <li class="pull-right"><a href="#" title="#"><i class="icon-info-sign icon-large"></i>&nbsp;Help</a></li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+
+    <%= yield %>
+
+  </div><!-- // Container -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascripts/wysihtml5-0.3.0_rc2.min.js"></script>
+  <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/javascripts/bootstrap-wysihtml5-0.0.2.min.js"></script>
+  <script type="text/javascript" src="/javascripts/application.js"></script>
+</body>
+</html>
