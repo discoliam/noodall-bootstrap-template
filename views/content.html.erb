@@ -71,19 +71,19 @@
                  <td>Version 3</td>
                  <td></td>
                  <td>01.01.2012</td>
-                 <td><a href="">View</a>&nbsp;<a href="">Use</a></td>
+                 <td><a href="" class="btn btn-small btn-info">View</a>&nbsp;<a href="" class="btn btn-small btn-success">Use</a></td>
                </tr>
               <tr>
                 <td>Version 2</td>
                 <td></td>
                 <td>01.01.2012</td>
-                <td><a href="">View</a>&nbsp;<a href="">Use</a></td>
+                <td><a href="" class="btn btn-small btn-info">View</a>&nbsp;<a href="" class="btn btn-small btn-success">Use</a></td>
               </tr>
               <tr>
                  <td>Version 1</td>
                  <td></td>
                  <td>01.01.2012</td>
-                 <td><a href="">View</a>&nbsp;<a href="">Use</a></td>
+                 <td><a href="" class="btn btn-small btn-info">View</a>&nbsp;<a href="" class="btn btn-small btn-success">Use</a></td>
                </tr>
 
             </table>
@@ -180,16 +180,287 @@
         
         <dl class="dl-horizontal">
           <dt>1</dt>
-          <dd><a href="#">Small Slot</a></dd>
+          <dd><a data-toggle="modal" href="#gcm">General Content</a></dd>
           <dt>2</dt>
-          <dd><a href="#">Small Slot</a></dd>
+          <dd><a data-toggle="modal" href="#gallery">Gallery</a></dd>
           <dt>3</dt>
-          <dd><a href="#">Small Slot</a></dd>
+          <dd><a data-toggle="modal" href="#quote">Quote</a></dd>
           <dt>4</dt>
-          <dd><a href="#">Small Slot</a></dd>
+          <dd><a data-toggle="modal" href="#image-cta">Image CTA</a></dd>
           <dt>5</dt>
-          <dd><a href="#">Small Slot</a></dd>
+          <dd><a data-toggle="modal" href="#downloads">Downloads</a></dd>
         </dl>
+        
+        
+        <div class="modal fade" id="gcm">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Component</h3>
+          </div>
+          <div class="modal-body">
+            <form>
+              
+              <div class="well">
+                <label>Choose your component</label>
+                <select>
+                  <option>General Content</option>
+                  <option>Gallery</option>
+                  <option>Qoute</option>
+                </select>
+              </div>
+
+              
+              <fieldset>
+                <label>Title</label>
+                <input type="text" placeholder="" class="span5">
+                
+                <label>Image</label>
+                <input type="file" placeholder="" class="span5">
+
+                <label>Body</label>
+                <textarea class="span5"></textarea>
+
+                <label>Link URL</label>
+                <input type="text" placeholder="" class="span4">
+                <span class="help-inline"><i class="icon-info-sign pull-right icon-large help" title="Link URL" data-content="If linking to an external site, remember to include the http:// at the begining."></i></span>
+                <span class="help-block">...or select an <a href="#">Asset</a> or <a href="#">Page</a>.</span>
+
+                <label>Link Text</label>
+                <input type="text" placeholder="" class="span5">
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn btn-success" data-dismiss="modal">Save</a>
+            <a href="#" class="btn btn-danger" data-dismiss="modal">Delete</a>
+          </div>
+        </div>
+        
+        
+        <div class="modal fade" id="gallery">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Component</h3>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="well">
+                <label>Choose your component</label>
+                <select>
+                  <option>General Content</option>
+                  <option>Gallery</option>
+                  <option>Qoute</option>
+                </select>
+              </div>
+              
+              <fieldset>
+                
+                <div class="btn-group">
+                  <a class="btn btn-success">Images <i class="icon-picture"></i></a>
+                  <a class="btn">Upload <i class="icon-upload"></i></a>
+                </div>
+                
+                <label>Title</label>
+                <input type="text" placeholder="" class="span5">
+                
+                <label>Description</label>
+                <textarea class="span5"></textarea>
+                
+                <div class="well">
+                  <img src="/images/one.jpeg"></img>
+                  <a href="#" data-toggle="collapse" data-target="#image-edit-1" class="btn btn-warning pull-right"><i class="icon-edit"></i></a>
+                  <div class="collapse in" id="image-edit-1">
+                    <label>Title</label>
+                    <input type="text" placeholder="" class="span5">
+                    <label>Description</label>
+                    <textarea class="span5"></textarea>
+                    <a href="#" class="btn btn-success"><i class="icon-edit"></i> Save</a>
+                  </div>
+                </div>
+                
+                <div class="well">
+                  <img src="/images/one.jpeg"></img>
+                  <a href="#" data-toggle="collapse" data-target="#image-edit-2" class="btn btn-warning pull-right"><i class="icon-edit"></i></a>
+                  <div class="collapse in" id="image-edit-2">
+                    <label>Title</label>
+                    <input type="text" placeholder="" class="span5">
+                    <label>Description</label>
+                    <textarea class="span5"></textarea>
+                    <a href="#" class="btn btn-success"><i class="icon-edit"></i> Save</a>
+                  </div>
+                </div>
+                
+                <div class="well">
+                  <img src="/images/one.jpeg"></img>
+                  <a href="#" data-toggle="collapse" data-target="#image-edit-3" class="btn btn-warning pull-right"><i class="icon-edit"></i></a>
+                  <div class="collapse in" id="image-edit-3">
+                    <label>Title</label>
+                    <input type="text" placeholder="" class="span5">
+                    <label>Description</label>
+                    <textarea class="span5"></textarea>
+                    <a href="#" class="btn btn-success"><i class="icon-edit"></i> Save</a>
+                  </div>
+                </div>
+                
+
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn btn-success" data-dismiss="modal">Save</a>
+            <a href="#" class="btn btn-danger" data-dismiss="modal">Delete</a>
+          </div>
+        </div>
+        
+           <div class="modal fade" id="quote">
+              <div class="modal-header">
+                <a class="close" data-dismiss="modal">×</a>
+                <h3>Component</h3>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="well">
+                    <label>Choose your component</label>
+                    <select>
+                      <option>General Content</option>
+                      <option>Gallery</option>
+                      <option>Quote</option>
+                    </select>
+                  </div>
+
+                  <fieldset>
+
+                    <label>Qoute</label>
+                    <textarea class="span5"></textarea>
+                    
+                    <label>Author</label>
+                    <input type="text" placeholder="" class="span5">
+                    
+                    <label>Link URL</label>
+                    <input type="text" placeholder="" class="span4">
+                    <span class="help-inline"><i class="icon-info-sign pull-right icon-large help" title="Link URL" data-content="If linking to an external site, remember to include the http:// at the begining."></i></span>
+                    <span class="help-block">...or select an <a href="#">Asset</a> or <a href="#">Page</a>.</span>
+
+
+                  </fieldset>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="btn btn-success" data-dismiss="modal">Save</a>
+                <a href="#" class="btn btn-danger" data-dismiss="modal">Delete</a>
+              </div>
+            </div>
+            
+            
+            <div class="modal fade" id="image-cta">
+               <div class="modal-header">
+                 <a class="close" data-dismiss="modal">×</a>
+                 <h3>Component</h3>
+                 <select>
+                   <option>General Content</option>
+                   <option>Gallery</option>
+                   <option>Quote</option>
+                 </select>
+               </div>
+               <div class="modal-body">
+                 <form>
+                   <fieldset>
+
+                     <label>Image</label>
+                     <input type="file" placeholder="" class="span5">
+
+                     <label>Link URL</label>
+                     <input type="text" placeholder="" class="span4">
+                     <span class="help-inline"><i class="icon-info-sign pull-right icon-large help" title="Link URL" data-content="If linking to an external site, remember to include the http:// at the begining."></i></span>
+                     <span class="help-block">...or select an <a href="#">Asset</a> or <a href="#">Page</a>.</span>
+
+
+                   </fieldset>
+                 </form>
+               </div>
+               <div class="modal-footer">
+                 <a href="#" class="btn btn-success" data-dismiss="modal">Save</a>
+                 <a href="#" class="btn btn-danger" data-dismiss="modal">Delete</a>
+               </div>
+             </div>
+             
+             <div class="modal fade" id="downloads">
+               <div class="modal-header">
+                 <a class="close" data-dismiss="modal">×</a>
+                 <h3>Component</h3>
+               </div>
+               <div class="modal-body">
+                 <form>
+                   <div class="well">
+                     <label>Choose your component</label>
+                     <select>
+                       <option>General Content</option>
+                       <option>Gallery</option>
+                       <option>Qoute</option>
+                     </select>
+                   </div>
+
+                   <fieldset>
+
+                     <div class="btn-group">
+                       <a class="btn btn-success">Documents <i class="icon-file"></i></a>
+                       <a class="btn">Upload <i class="icon-upload"></i></a>
+                     </div>
+
+                     <label>Title</label>
+                     <input type="text" placeholder="" class="span5">
+
+                     <label>Description</label>
+                     <textarea class="span5"></textarea>
+
+                     <div class="well">
+                       <img src="/images/one.jpeg"></img>
+                       <a href="#" data-toggle="collapse" data-target="#doc-edit-1" class="btn btn-warning pull-right"><i class="icon-edit"></i></a>
+                       <div class="collapse in" id="doc-edit-1">
+                         <label>Title</label>
+                         <input type="text" placeholder="" class="span5">
+                         <label>Description</label>
+                         <textarea class="span5"></textarea>
+                         <a href="#" class="btn btn-success"><i class="icon-edit"></i> Save</a>
+                       </div>
+                     </div>
+
+                     <div class="well">
+                       <img src="/images/one.jpeg"></img>
+                       <a href="#" data-toggle="collapse" data-target="#doc-edit-2" class="btn btn-warning pull-right"><i class="icon-edit"></i></a>
+                       <div class="collapse in" id="doc-edit-2">
+                         <label>Title</label>
+                         <input type="text" placeholder="" class="span5">
+                         <label>Description</label>
+                         <textarea class="span5"></textarea>
+                         <a href="#" class="btn btn-success"><i class="icon-edit"></i> Save</a>
+                       </div>
+                     </div>
+
+                     <div class="well">
+                       <img src="/images/one.jpeg"></img>
+                       <a href="#" data-toggle="collapse" data-target="#doc-edit-3" class="btn btn-warning pull-right"><i class="icon-edit"></i></a>
+                       <div class="collapse in" id="doc-edit-3">
+                         <label>Title</label>
+                         <input type="text" placeholder="" class="span5">
+                         <label>Description</label>
+                         <textarea class="span5"></textarea>
+                         <a href="#" class="btn btn-success"><i class="icon-edit"></i> Save</a>
+                       </div>
+                     </div>
+
+
+                   </fieldset>
+                 </form>
+               </div>
+               <div class="modal-footer">
+                 <a href="#" class="btn btn-success" data-dismiss="modal">Save</a>
+                 <a href="#" class="btn btn-danger" data-dismiss="modal">Delete</a>
+               </div>
+             </div>
+             
+            
+        
         
         
         
